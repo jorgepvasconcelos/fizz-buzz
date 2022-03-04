@@ -1,4 +1,6 @@
 def fizz_buzz(value: int):
+    if not isinstance(value, int):
+        raise ValueError('value param must be a integer')
     if value % 3 == 0 and value % 5 == 0:
         return 'fizzbuzz'
     elif value % 3 == 0:
@@ -9,6 +11,6 @@ def fizz_buzz(value: int):
         return value
 
 
-var = fizz_buzz(value=15)
+var = fizz_buzz(value=4)
 print(var)
 
