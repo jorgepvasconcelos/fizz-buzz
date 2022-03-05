@@ -1,6 +1,6 @@
 version: '3'
 services:
-  flask_service:
+  fizzbuzz_service:
     build:
       context: .
       dockerfile: dockerfile
