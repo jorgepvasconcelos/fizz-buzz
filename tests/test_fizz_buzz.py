@@ -1,5 +1,5 @@
 from pytest import mark
-from fizz_buzz.code import fizz_buzz
+from fizz_buzz.fizz_buzz import fizz_buzz
 
 
 @mark.parametrize('input_value', [15, 30, 45, 60])

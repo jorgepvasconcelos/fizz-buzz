@@ -10,7 +10,7 @@ def fizz_buzz(value: int):
     else:
         return value
 
-
-var = fizz_buzz(value=4)
-print(var)
+#
+# var = fizz_buzz(value=4)
+# print(var)
 
