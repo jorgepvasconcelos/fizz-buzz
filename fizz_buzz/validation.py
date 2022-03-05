@@ -4,6 +4,12 @@ def validation_fizzbuzz_route(data: dict) -> dict:
         'message_response': dict,
         'status_code': int}
 
+    if not data:
+        validation['error'] = 1
+        validation['message_response'] = {"warning": "you need send a 'value' param"}
+        validation['status_code'] = 400
+        return validation
+
     if 'value' not in data:
         validation['error'] = 1
         validation['message_response'] = {"warning": "you need send a 'value' param"}
