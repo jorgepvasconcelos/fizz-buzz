@@ -1,5 +1,5 @@
 from flask import Flask, request
-from fizz_buzz.fizz_buzz_resolver import fizz_buzz_resolver
+from fizz_buzz.fizzbuzz_resolver import fizzbuzz_resolver
 from validation import validation_fizzbuzz_route
 
 app = Flask(__name__)
@@ -13,8 +13,7 @@ def fizzbuzz():
     if validation['error']:
         return validation['message_response'], validation['status_code']
 
-    value = data['value']
-    return {'result': fizz_buzz_resolver(value)}
+    return {'result': fizzbuzz_resolver(value=data['value'])}
 
 
 if __name__ == '__main__':
