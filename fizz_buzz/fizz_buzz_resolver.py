@@ -1,4 +1,6 @@
 def fizz_buzz_resolver(value: int):
+    if not isinstance(value, int):
+        return {'ValueError': 'value param must be a integer'}, 400
     if value % 3 == 0 and value % 5 == 0:
         return 'fizzbuzz'
     elif value % 3 == 0:
