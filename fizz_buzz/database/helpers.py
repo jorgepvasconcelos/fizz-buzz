@@ -82,3 +82,6 @@ if __name__ == '__main__':
     # obj_user.name = 'platao'
     # obj_user.age = 65
     # insert_obj(obj=obj_user)
+
+    # ------------------------------------- use of delete_obj_by_id -------------------------------------
+    # delete_obj_by_id(obj=User, obj_id=2)
