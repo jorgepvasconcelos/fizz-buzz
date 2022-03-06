@@ -39,13 +39,15 @@ def update_obj_by_id(obj, obj_id, obj_update):
 
 if __name__ == '__main__':
     ...
-    # ------------------------------------- how to use -------------------------------------
-
-    # ------------------------------------- how to select -------------------------------------
+    # ------------------------------------- use of select_obj_by_id -------------------------------------
     # var = select_obj_by_id(obj=User, obj_id=2)
     # print(var)
 
-    # ------------------------------------- how to update -------------------------------------
-    # update_obj_by_id(obj=User, obj_id=2,
-    #                  obj_update={User.name: 'zabuza',
-    #                              User.age: 50})
+    # ------------------------------------- use of update_obj_by_id -------------------------------------
+    # update_obj_by_id(obj=User, obj_id=2, obj_update={User.name: 'zabuza', User.age: 50})
+
+    # ------------------------------------- use of insert_obj -------------------------------------
+    # obj_user = User(name='nietzsche', age=55)
+    # insert_obj(obj=obj_user)
+
+
