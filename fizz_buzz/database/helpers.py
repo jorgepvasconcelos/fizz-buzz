@@ -39,6 +39,11 @@ def update_obj_by_id(obj, obj_id, obj_update):
 
 if __name__ == '__main__':
     ...
+    # ------------------------------------- use of create_session -------------------------------------
+    # with create_session() as session:
+    #     var = session.query(User).filter_by(id=2).first()
+    #     print(var.name)
+
     # ------------------------------------- use of select_obj_by_id -------------------------------------
     # var = select_obj_by_id(obj=User, obj_id=2)
     # print(var)
@@ -48,10 +53,10 @@ if __name__ == '__main__':
     # update_obj_by_id(obj=User, obj_id=2, obj_update={User.name: 'zabuza', User.age: 50})
 
     # Form - 2
-    update_dict = {}
-    update_dict[User.name] = 'aristoteles'
-    update_dict[User.age] = 48
-    update_obj_by_id(obj=User, obj_id=2, obj_update=update_dict)
+    # update_dict = {}
+    # update_dict[User.name] = 'aristoteles'
+    # update_dict[User.age] = 48
+    # update_obj_by_id(obj=User, obj_id=2, obj_update=update_dict)
 
     # ------------------------------------- use of insert_obj -------------------------------------
     # Form - 1
