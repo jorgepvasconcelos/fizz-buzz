@@ -44,7 +44,14 @@ if __name__ == '__main__':
     # print(var)
 
     # ------------------------------------- use of update_obj_by_id -------------------------------------
+    # Form - 1
     # update_obj_by_id(obj=User, obj_id=2, obj_update={User.name: 'zabuza', User.age: 50})
+
+    # Form - 2
+    update_dict = {}
+    update_dict[User.name] = 'aristoteles'
+    update_dict[User.age] = 48
+    update_obj_by_id(obj=User, obj_id=2, obj_update=update_dict)
 
     # ------------------------------------- use of insert_obj -------------------------------------
     # Form - 1
