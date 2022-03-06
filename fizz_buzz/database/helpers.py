@@ -40,9 +40,16 @@ def update_obj_by_id(obj, obj_id, obj_update):
 if __name__ == '__main__':
     ...
     # ------------------------------------- use of create_session -------------------------------------
+    # Form - 1
     # with create_session() as session:
     #     var = session.query(User).filter_by(id=2).first()
     #     print(var.name)
+
+    # Form - 2
+    # with create_session() as session:
+    #     results = session.query(User).all()
+    #     for row in results:
+    #         print(row.name)
 
     # ------------------------------------- use of select_obj_by_id -------------------------------------
     # var = select_obj_by_id(obj=User, obj_id=2)
