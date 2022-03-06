@@ -1,4 +1,4 @@
-from pytest import mark
+from pytest import mark, raises
 from fizz_buzz.fizzbuzz_resolver import fizzbuzz_resolver
 
 
@@ -22,6 +22,7 @@ def test_when_fizzbuzz_not_receives_multiples_of_3_and_5_should_return_itself_va
     assert fizzbuzz_resolver(value=input_value) == input_value
 
 
-@mark.xfail()
+# @mark.xfail()
 def test_when_fizzbuzz_not_receives_int_value_should_raise_valueerror():
-    assert fizzbuzz_resolver(value='invalid') == 4
+    with raises(ValueError):
+        fizzbuzz_resolver(value='invalid')
