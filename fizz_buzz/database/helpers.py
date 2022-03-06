@@ -47,7 +47,14 @@ if __name__ == '__main__':
     # update_obj_by_id(obj=User, obj_id=2, obj_update={User.name: 'zabuza', User.age: 50})
 
     # ------------------------------------- use of insert_obj -------------------------------------
+    # Form - 1
     # obj_user = User(name='nietzsche', age=55)
+    # insert_obj(obj=obj_user)
+
+    # Form - 2
+    # obj_user = User()
+    # obj_user.name = 'platao'
+    # obj_user.age = 65
     # insert_obj(obj=obj_user)
 
 
