@@ -15,18 +15,18 @@ def create_session():
         session.close()
 
 
-def insert_obj(obj):
-    with create_session() as session:
-        session.add(obj)
-        session.flush()
-        session.commit()
-
-
 def select_obj_by_id(obj, obj_id):
     with create_session() as session:
         resultado = session.query(obj).filter_by(id=obj_id).first()
         session.close()
         return resultado
+
+
+def insert_obj(obj):
+    with create_session() as session:
+        session.add(obj)
+        session.flush()
+        session.commit()
 
 
 def update_obj_by_id(obj, obj_id, obj_update):
@@ -35,6 +35,13 @@ def update_obj_by_id(obj, obj_id, obj_update):
         session.flush()
         session.commit()
         session.close()
+
+
+def delete_obj_by_id(obj, obj_id):
+    with create_session() as session:
+        session.query(obj).filter_by(id=obj_id).delete()
+        session.flush()
+        session.commit()
 
 
 if __name__ == '__main__':
@@ -75,5 +82,3 @@ if __name__ == '__main__':
     # obj_user.name = 'platao'
     # obj_user.age = 65
     # insert_obj(obj=obj_user)
-
-
