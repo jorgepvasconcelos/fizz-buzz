@@ -21,6 +21,7 @@ services:
       MYSQL_ROOT_PASSWORD: "123"
       MYSQL_PASSWORD: '123'
       MYSQL_DATABASE: "testedb"
+      MYSQL_USER: "userteste"
     ports:
       - "3306:3306"
 #    networks:
