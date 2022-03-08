@@ -46,6 +46,13 @@ def delete_obj_by_id(obj, obj_id):
 
 if __name__ == '__main__':
     ...
+    # with create_session() as session:
+    #     config = {'age': '10'}
+    #     print(config)
+    #     results = session.query(User).filter_by(**config).all()
+    #     for row in results:
+    #         print(row.name)
+
     # ------------------------------------- use of create_session -------------------------------------
     # Form - 1
     # with create_session() as session:
