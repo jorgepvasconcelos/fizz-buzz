@@ -7,7 +7,7 @@ services:
     image: fizzbuzz_image
     container_name: container_fizzbuzz
     ports:
-      - 5000:5000
+      - "5000:5000"
     links:
       - mysql_server
 #    networks:
@@ -19,7 +19,7 @@ services:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: "123"
-      MYSQL_PASSWORD: '123'
+      MYSQL_PASSWORD: '1234'
       MYSQL_DATABASE: "testedb"
       MYSQL_USER: "userteste"
     ports:
